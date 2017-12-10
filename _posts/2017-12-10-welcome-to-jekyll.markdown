@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+image: assets/fresh-cover.png
 date:   2017-12-10 14:37:50 -0800
 categories: jekyll update
 ---
