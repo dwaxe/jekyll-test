@@ -183,6 +183,25 @@
   @include relative-font-size(1.25);
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  justify-content: space-evenly;
+
+  > a {
+    flex-grow: 1;
+    flex-basis: 200px;
+    max-width: 300px;
+
+      > img {
+        height: 100%;
+        width: 100%;
+      }
+  }
+}
+
 .post-list {
   margin-left: 0;
   list-style: none;

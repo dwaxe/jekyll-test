@@ -8,6 +8,14 @@ layout: default
 
   <h1 class="page-heading">Work</h1>
 
+  <div class="gallery">
+    {% for post in site.posts %}
+      <a class="gallery-link" href="{{ post.url | relative_url }}">
+        <img src="{{ post.image | relative_url}}">
+      </a>
+    {% endfor %}
+  </div>
+
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -18,7 +26,6 @@ layout: default
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
 
-        <img src="{{ post.image | relative_url}}">
       </li>
     {% endfor %}
   </ul>
